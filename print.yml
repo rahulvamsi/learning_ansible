@@ -1,19 +1,19 @@
 - name: Demo my first playbook, Play1
-  hosts: all
+
   tasks:
     - name: Print Hello
       ansible.builtin.debug:
         msg: Hello How are you
 
 - name: Demo my first playbook, Play2
-  hosts: all
+
   tasks:
     - name: Print Hello
       ansible.builtin.debug:
         msg: Hello How are you
 
 - name : demo app3
-  hosts: all
+  
   tasks:
     - name : print rahul
       ansible.builtin.debug:
