@@ -1,7 +1,7 @@
--name: demo app
+- name: demo app
   hosts:all
   tasks:
-    -name: print hello
+    - name: print hello
       ansible.builtin.debug:
         msg:hello_rahul
 
