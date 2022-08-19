@@ -17,3 +17,14 @@
         URL: inside.task.com
       ansible.builtin.debug:
         msg: url == {{ URL }}
+
+- name: Demo variable 3
+  hosts: all
+  vars_files:
+    d-vars.yml
+
+  tasks:
+    - name: inside file
+
+      ansible.builtin.debug:
+        msg: url == {{ URL }}
