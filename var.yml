@@ -1,8 +1,18 @@
-- name: Demo variable 1
+#- name: Demo variable 1
+#  hosts: all
+#  var:
+#    URL: here.ex.com
+#  tasks:
+#    - name: inside variable
+#      ansible.builtin.debug:
+#        msg: url == {{ URL }}
+
+
+- name: Demo on Play vars
   hosts: all
-  var:
-    URL: here.ex.com
+  vars:
+    URL: play.example.com
   tasks:
-    - name: inside variable
+    - name: Print URL
       ansible.builtin.debug:
-        msg: url == {{ URL }}
+        msg: URL == {{ URL }}
