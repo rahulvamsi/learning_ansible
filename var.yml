@@ -1,8 +1,8 @@
-- name: demo variable 1
+- name: Demo variable 1
   hosts: all
   var:
-    url: here.var.com
+    URL: here.ex.com
   tasks:
     - name: inside variable
       ansible.builtin.debug:
-        msg: url == {{ url }}
+        msg: url == {{ URL }}
