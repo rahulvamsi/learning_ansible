@@ -13,6 +13,7 @@
 
   tasks:
     - name: inside tasks
-      URL: inside.task.com
+      vars:
+        URL: inside.task.com
       ansible.builtin.debug:
         msg: url == {{ URL }}
