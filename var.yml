@@ -39,3 +39,8 @@
     - name: inside file
       ansible.builtin.debug:
         msg: url == {{ URL }}
+
+- name: printing 6
+  hosts: all
+  roles:
+    sample
