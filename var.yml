@@ -40,7 +40,7 @@
       ansible.builtin.debug:
         msg: url == {{ URL }}
 
-- name: printing 6
+- name: demo dir var
   hosts: all
   roles:
-    sample
+    - sample
