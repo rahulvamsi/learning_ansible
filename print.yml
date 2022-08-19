@@ -11,3 +11,10 @@
     - name: Print Hello
       ansible.builtin.debug:
         msg: Hello How are you
+
+- name : demo app3
+  hosts: all
+  tasks:
+    - name : print rahul
+      ansible.builtin.debug:
+        msg: hello_rahul?
