@@ -32,3 +32,10 @@
     - name: inside file
       ansible.builtin.debug:
         msg: url == {{ URL }}
+
+- name: Demo variable 5
+  hosts: all
+  tasks:
+    - name: inside file
+      ansible.builtin.debug:
+        msg: url == {{ URL }}
