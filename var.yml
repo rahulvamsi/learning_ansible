@@ -38,4 +38,4 @@
   tasks:
     - name: inside file
       ansible.builtin.debug:
-        msg: url == {{ URL1 }}
+        msg: url == {{ URL }}
