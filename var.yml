@@ -12,7 +12,7 @@
   hosts: all
 
   tasks:
-    - name: inside variable
+    - name: inside tasks
       URL: inside.task.com
       ansible.builtin.debug:
         msg: url == {{ URL }}
