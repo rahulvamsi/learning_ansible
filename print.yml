@@ -30,7 +30,7 @@
   tasks:
     - name:  checking condition
       ansible.builtin.debug:
-        msg: {{item}}
+        msg: "{{item}}"
     - loop:
         - orange
         - grape
