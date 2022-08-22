@@ -36,6 +36,21 @@
         - name: {apple,orange}
         - quantity: {10,20}
 
+- name: true or false
+  hosts: all
+  vars:
+    - Turnon == True
+    - Turnoff == False
+  tasks:
+    - name: checking
+      ansible.builtin.debug:
+        msg: turned on
+      when: Turnon
+    - name: checking
+      ansible.builtin.debug:
+        msg: turned off
+      when: Turnoff
+
 - name: when condition
   hosts: all
   tasks:
