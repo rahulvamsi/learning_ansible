@@ -23,3 +23,14 @@
   hosts: all
   roles:
     - sample
+
+
+- name: sample condition
+  hosts: all
+  tasks:
+    - name:  checking condition
+        ansible.builtin.debug:
+          msg: {{item}}
+    - loop:
+        - orange
+        - grape
