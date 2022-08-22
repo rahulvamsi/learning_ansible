@@ -31,10 +31,9 @@
     - name:  checking condition
       ansible.builtin.debug:
         msg: name == {{ item.name }}, quan ==  {{ item.qty }}
-
       loop:
-        -  { name: apple, name: orange }
-        -  { qty: 10, qty: 20 }
+        -  { name: apple, qty: 10 }
+        -  { name: orange, qty: 20 }
 
 - name: true or false
   hosts: all
