@@ -31,6 +31,6 @@
     - name:  checking condition
       ansible.builtin.debug:
         msg: "{{item}}"
-    - loop:
+      - loop:
         - orange
         - grape
