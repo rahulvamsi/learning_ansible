@@ -53,7 +53,7 @@
   tasks:
     - name:  Redhat
       ansible.builtin.debug:
-        msg: "{{ansible_distribution,distribution_major_version}}"
+        msg: "{{ansible_distribution,ansible_distribution_major_version}}"
       when: ansible_os_family == "RedHat"
     - name: Debain
       ansible.builtin.debug:
