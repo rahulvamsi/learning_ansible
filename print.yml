@@ -12,14 +12,14 @@
       ansible.builtin.debug:
         msg: Hello How are you
 
--name: demo app3
+- name: demo app3
   hosts: all
   tasks:
     - name : print rahul
       ansible.builtin.debug:
         msg: hello_rahul?
 
--name:  demp app4
- hosts: all
- roles:
-   - sample
+- name:  demp app4
+  hosts: all
+  roles:
+    - sample
