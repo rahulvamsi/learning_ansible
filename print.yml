@@ -41,8 +41,8 @@
     - name:  Redhat
       ansible.builtin.debug:
         msg: this is Redhat
-      when: ansible_facts['os_family'] == "Redhat"
+      when: ansible_os_family == "Redhat"
     - name: Debain
       ansible.builtin.debug:
         msg: this is debain
-      when: ansible_facts['os_family'] == "Debain"
+      when: ansible_os_family == "Debain"
