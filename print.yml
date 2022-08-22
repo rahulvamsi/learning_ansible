@@ -29,8 +29,8 @@
   hosts: all
   tasks:
     - name:  checking condition
-        ansible.builtin.debug:
-          msg: {{item}}
+      ansible.builtin.debug:
+        msg: {{item}}
     - loop:
         - orange
         - grape
