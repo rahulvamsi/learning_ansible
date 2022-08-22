@@ -59,3 +59,14 @@
       ansible.builtin.debug:
         msg: this is debain
       when: ansible_os_family == "Debain"
+
+- name: checking uptime
+  hosts: all
+  tasks:
+    - name: register
+      ansible.builtin.shell:
+        uptime
+      register: uptime_output
+    - name: set_fact
+      ansible.builtin.set_fact:
+        out == "{{uptime_output}}"
