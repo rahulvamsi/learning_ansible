@@ -88,3 +88,9 @@
     - name: printing register output
       ansible.builtin.debug:
         msg: "{{UPTIME.end}}"
+
+
+- name: checking functions or roles
+  hosts: all
+  roles:
+    - sample
