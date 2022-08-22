@@ -30,11 +30,11 @@
   tasks:
     - name:  checking condition
       ansible.builtin.debug:
-        msg: name is "{{item.name}}"
-        msg: quantity is "{{item.quantity}}"
+        msg: name is "{{item.name}}", quan is "{{item.quantity}}"
+
       loop:
-        - name: {apple,orange}
-        - quantity: {10,20}
+        -  {name: apple, name: orange}
+        -  {quantity: 10, quantity: 20}
 
 - name: true or false
   hosts: all
