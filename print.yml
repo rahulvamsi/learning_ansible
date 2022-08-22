@@ -30,7 +30,7 @@
   tasks:
     - name:  checking condition
       ansible.builtin.debug:
-        msg: "{{item.name}}"
+        msg: "{{item}}"
       loop:
         - name: {apple,orange}
         - quantity: {10,20}
