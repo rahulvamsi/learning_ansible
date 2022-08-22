@@ -39,8 +39,8 @@
 - name: true or false
   hosts: all
   vars:
-    - Turnon == True
-    - Turnoff == False
+    Turnon: true
+    Turnoff: false
   tasks:
     - name: checking
       ansible.builtin.debug:
