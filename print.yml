@@ -46,3 +46,16 @@
       ansible.builtin.debug:
         msg: this is debain
       when: ansible_os_family == "Debain"
+
+
+- name: logical
+  hosts: all
+  tasks:
+    - name:  Redhat
+      ansible.builtin.debug:
+        msg: "{{ansible_distribution}}"
+      when: ansible_os_family == "RedHat"
+    - name: Debain
+      ansible.builtin.debug:
+        msg: this is debain
+      when: ansible_os_family == "Debain"
