@@ -40,7 +40,7 @@
   tasks:
     - name:  Redhat
       ansible.builtin.debug:
-        msg: "{{ansible_os_family}}"
+        msg: This is RedHat family
       when: ansible_os_family == "RedHat"
     - name: Debain
       ansible.builtin.debug:
